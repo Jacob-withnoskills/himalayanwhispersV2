@@ -1,0 +1,195 @@
+.contact-us-section {
+    background: linear-gradient(to right, #001F3F, #003366);
+    color: white;
+    padding: 40px 20px;
+    padding-top: 80px;   
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 320px;
+}
+
+.contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffc107;
+    display: inline-block;
+}
+
+.contact-group p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+
+.contact-groups {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.callback-form h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-row input,
+.phone-input select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.phone-input {
+    display: flex;
+    gap: 6px;
+}
+
+.callback-btn {
+    background: #ffc107;
+    border: none;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #003366;
+}
+
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    filter: none;
+     mix-blend-mode: normal; 
+}
+
+.office-locations {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.office-locations h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.office-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.office-card h4 {
+    font-size: 20px;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.office-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.office-footer span {
+    color: #444;
+    font-weight: 500;
+}
+
+.office-header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tag.sales {
+    background: purple;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.tag.forex {
+    background: gold;
+    color: black;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.status {
+    color: green;
+    font-size: 14px;
+}
+
+.office-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.details-btn {
+    background: #ffd500;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.call-btn {
+    background: #e5f3ff;
+    color: #0077c2;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.office-footer {
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.clickable {
+    cursor: pointer;
+    color: #007bff;
+
+    text-decoration: none;
+
+}
+
+.clickable:hover {
+    color: #0056b3;
+}

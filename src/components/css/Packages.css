@@ -1,0 +1,295 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #e0f7ff;
+}
+
+
+.packages-section,
+.best-deals-section {
+    padding: 60px 20px;
+    background-color: #0d0d0d;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #66ccff;
+    margin-bottom: 10px;
+}
+
+.section-title span {
+    color: #00e6e6;
+}
+
+.subtitle {
+    color: #aadfff;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+
+.packages-container,
+.deals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.package-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(102, 204, 255, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+}
+
+.package-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(102, 204, 255, 0.3);
+}
+
+
+.package-image {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+}
+
+
+.package-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+}
+
+.package-details .duration,
+.package-details .rating,
+.package-details .locations {
+    font-size: 0.9rem;
+    color: #a0d8f1;
+    margin-bottom: 6px;
+}
+
+.package-details .rating span {
+    color: #66ccff;
+    font-size: 0.8rem;
+}
+
+.package-details .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 12px 0;
+    color: #ffffff;
+}
+
+
+.price-box {
+    margin: 15px 0;
+}
+
+.price-box .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #66ccff;
+    margin-bottom: 5px;
+}
+
+.price-box .original-price {
+    font-size: 0.9rem;
+    color: #888;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+.price-box .save {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #00e6e6;
+    font-weight: 500;
+}
+
+
+.callback-btn {
+    margin-top: auto;
+    background-color: #f0ec0e;
+    color: #0d0d0d;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.callback-btn:hover {
+    background-color: #66ccff;
+    color: #000;
+}
+
+.callback-btn.dark {
+    background-color: #0099cc;
+}
+
+.callback-btn.dark:hover {
+    background-color: #66ccff;
+}
+
+
+
+.callback-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(13, 13, 13, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+
+.callback-dialog {
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    padding: 30px 25px;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 12px 30px rgba(102, 204, 255, 0.15);
+    color: #e0f7ff;
+    text-align: left;
+}
+
+.callback-dialog h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #66ccff;
+}
+
+
+.callback-dialog form label {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+}
+
+.callback-dialog input[type="text"],
+.callback-dialog input[type="tel"] {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #2a2a2a;
+    color: #e0f7ff;
+    font-size: 1rem;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.callback-dialog input:focus {
+    box-shadow: 0 0 0 2px #66ccff;
+}
+
+
+.dialog-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.dialog-buttons button {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dialog-buttons button[type="submit"] {
+    background-color: #f0ec0e;
+    color: #0d0d0d;
+    font-weight: bold;
+}
+
+.dialog-buttons button[type="submit"]:hover {
+    background-color: #66ccff;
+    color: #000;
+}
+
+.dialog-buttons button[type="button"] {
+    background-color: #444;
+    color: #fff;
+}
+
+.dialog-buttons button[type="button"]:hover {
+    background-color: #777;
+}
+.tour-detail-section {
+    margin-top: 60px;
+    background-color: #1a1a1a;
+    padding: 50px 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    box-shadow: 0 4px 20px rgba(102, 204, 255, 0.05);
+}
+
+.tour-detail-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #66ccff;
+    text-align: center;
+}
+
+.tour-detail-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #aadfff;
+    margin-bottom: 16px;
+}
+
+.tour-detail-section a {
+    color: #00e6e6;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.tour-detail-section a:hover {
+    color: #66ccff;
+}
+@media (max-width: 768px) {
+    .package-details {
+        text-align: center;
+    }
+
+    .package-details .title {
+        font-size: 1rem;
+    }
+
+    .callback-btn {
+        width: 100%;
+    }
+}

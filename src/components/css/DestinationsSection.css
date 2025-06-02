@@ -1,0 +1,175 @@
+.destination-section {
+    background-color: #0a0a0a;
+    color: #c0e7ff;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #a2d2ff;
+    text-align: center;
+    text-shadow: 0 0 6px #88c9ffcc;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    color: #b3d1ffcc;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 0 20px;
+}
+
+.destination-card {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    color: #e0f0ff;
+    display: flex;
+    align-items: flex-end;
+    padding: 16px;
+    box-shadow: 0 6px 20px rgba(70, 150, 250, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(100, 180, 255, 0.7);
+}
+
+.destination-label {
+    font-weight: 700;
+    font-size: 1.4rem;
+    background-color: rgba(10, 25, 40, 0.75);
+    padding: 6px 12px;
+    border-radius: 6px;
+    box-shadow: 0 0 8px #88c9ffaa;
+}
+
+.view-all-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.view-all-btn {
+    background-color: #178bff;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 15px #5ca6ffcc;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-all-btn:hover {
+    background-color: #50a8ff;
+    box-shadow: 0 8px 25px #85bfffcc;
+}
+
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 2.4rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+
+
+    .destination-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .destination-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+        padding: 0 12px;
+    }
+
+    .destination-card {
+        height: 180px;
+        padding: 12px;
+    }
+
+    .destination-label {
+        font-size: 1.2rem;
+        padding: 5px 10px;
+    }
+
+    .view-all-btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .destination-section {
+        padding: 40px 10px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .destination-card {
+        height: 160px;
+        padding: 10px;
+    }
+
+    .destination-label {
+        font-size: 1.1rem;
+        padding: 4px 8px;
+    }
+
+    .view-all-btn {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 1rem;
+        border-radius: 25px;
+    }
+}

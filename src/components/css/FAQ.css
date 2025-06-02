@@ -1,0 +1,95 @@
+.faq-container {
+    background-color: #000;
+    /* Full page black background */
+    padding: 4rem 1rem;
+    color: #fff;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+.faq-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #66b2ff;
+    /* Light blue heading */
+    margin-bottom: 1rem;
+}
+
+.faq-container .subheading {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+.faq-category {
+    margin: 2.5rem auto;
+    max-width: 1000px;
+    text-align: left;
+}
+
+.faq-category h2 {
+    font-size: 2rem;
+    color: #66b2ff;
+    border-bottom: 2px solid #66b2ff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.faq-block {
+    background: #111;
+    /* Dark content block */
+    border-left: 5px solid #66b2ff;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(102, 178, 255, 0.1);
+}
+
+.faq-block h3 {
+    font-size: 1.2rem;
+    color: #66b2ff;
+    margin-bottom: 0.6rem;
+}
+
+.faq-block ul {
+    padding-left: 1.2rem;
+}
+
+.faq-block li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+a {
+    color: #66b2ff;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 480px) {
+    .faq-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .faq-category h2 {
+        font-size: 1.5rem;
+    }
+
+    .faq-block {
+        padding: 1rem;
+    }
+
+    .faq-block h3 {
+        font-size: 1rem;
+    }
+
+    .faq-block li {
+        font-size: 0.9rem;
+    }
+}

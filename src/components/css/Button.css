@@ -1,0 +1,8 @@
+.primary-button {
+    padding: 0.75rem 2rem;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer; }
