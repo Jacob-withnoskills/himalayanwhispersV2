@@ -3,18 +3,19 @@ import PhoneInput from 'react-phone-input-2';
 import './css/ContactUs.css';
 import 'react-phone-input-2/lib/style.css';
 import contact from './images/contact.svg';
+import { Helmet } from 'react-helmet'
 
 export default function ContactUs() {
     const [phone, setPhone] = useState('');
     const [fullName, setFullName] = useState('');
 
-    // Open Google Maps for a given address
+
     const openGoogleMaps = (address) => {
         const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
         window.open(url, '_blank');
     };
 
-    // Share URL and text
+
     const shareOffice = (officeName, address) => {
         const shareData = {
             title: `${officeName} Location`,
@@ -30,7 +31,7 @@ export default function ContactUs() {
         }
     };
 
-    // Send user details to WhatsApp
+
     const sendToWhatsApp = () => {
         if (!fullName || !phone) {
             alert("Please enter both full name and phone number.");
@@ -40,7 +41,7 @@ export default function ContactUs() {
         const message = `Hi, I'm ${fullName}. Please call me back at ${phone}.`;
         const encodedMessage = encodeURIComponent(message);
 
-        // Your WhatsApp number (e.g., without "+" or spaces)
+      
         const yourNumber = '917099097003';
         const whatsappUrl = `https://wa.me/${yourNumber}?text=${encodedMessage}`;
 
@@ -49,6 +50,33 @@ export default function ContactUs() {
 
     return (
         <section className="contact-us-section">
+            <Helmet>
+                <title>Contact Us | Himalayan Whispers</title>
+                <meta name="description" content="Reach out to Himalayan Whispers for unforgettable Bhutan travel experiences. Call, email or request a callback today." />
+                <meta name="robots" content="index, follow" />
+
+             
+                <script type="application/ld+json">{`
+                    {
+                      "@context": "https://schema.org",
+                      "@type": "TravelAgency",
+                      "name": "Himalayan Whispers",
+                      "url": "https://www.himalayanwhispers.com",
+                      "logo": "https://www.himalayanwhispers.com/logo.png",
+                      "sameAs": [
+                        "https://www.facebook.com/himalayanwhispers",
+                        "https://www.instagram.com/himalayanwhispers"
+                      ],
+                      "contactPoint": {
+                        "@type": "ContactPoint",
+                        "telephone": "+97577765137",
+                        "contactType": "Customer Service",
+                        "areaServed": ["IN", "US", "UK", "CA", "AU", "FR", "DE", "IT", "ES", "SG", "NZ", "AE", "ZA", "JP", "CN", "TH", "MY", "NL", "CH"]
+
+                      }
+                    }
+                `}</script>
+            </Helmet>
             <div className="contact-content">
                 <div className="contact-info">
                     <h2>Contact Us Today!</h2>
