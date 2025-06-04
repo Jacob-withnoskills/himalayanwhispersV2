@@ -31,47 +31,41 @@ export default function Hero() {
     return (
         <>
             <Helmet>
-                <title>Himalayan Whispers | Adventure in Bhutan</title>
+                <title>DrukQuest | Adventure in Bhutan</title>
                 <meta name="description" content="Explore Bhutan's magical landscapes, unique culture, and thrilling adventures with our curated travel experiences." />
-                <meta name="keywords" content="Bhutan travel, Bhutan trekking, Paro, Thimphu, Himalayan adventure, TravelWithUs, Himalayan Whispers" />
+                <meta name="keywords" content="Bhutan travel, Bhutan trekking, Paro, Thimphu, Himalayan adventure, TravelWithUs, DrukQuest" />
                 <meta name="robots" content="index, follow" />
 
-           
-                <meta property="og:title" content="Himalayan Whispers | Adventure in Bhutan" />
-                <meta property="og:description" content="Discover Bhutan’s beauty with Himalayan Whispers. Curated tours, cultural experiences, and nature-packed itineraries." />
-                <meta property="og:image" content="https://www.himalayanwhispers.com/og-image.jpg" />
-                <meta property="og:url" content="https://www.himalayanwhispers.com/" />
+                <meta property="og:title" content="DrukQuest | Adventure in Bhutan" />
+                <meta property="og:description" content="Discover Bhutan’s beauty with DrukQuest. Curated tours, cultural experiences, and nature-packed itineraries." />
+                <meta property="og:image" content="https://www.drukquest.com/og-image.jpg" />
+                <meta property="og:url" content="https://www.drukquest.com/" />
                 <meta property="og:type" content="website" />
 
-            
                 <meta name="twitter:card" content="summary_large_image" />
-                <meta name="twitter:title" content="Himalayan Whispers | Adventure in Bhutan" />
-                <meta name="twitter:description" content="Plan your dream Bhutan trip with Himalayan Whispers. Mystical, peaceful, unforgettable." />
-                <meta name="twitter:image" content="https://www.himalayanwhispers.com/twitter-image.jpg" />
-
+                <meta name="twitter:title" content="DrukQuest | Adventure in Bhutan" />
+                <meta name="twitter:description" content="Plan your dream Bhutan trip with DrukQuest. Mystical, peaceful, unforgettable." />
+                <meta name="twitter:image" content="https://www.drukquest.com/twitter-image.jpg" />
          
                 <script type="application/ld+json">{`
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "TravelAgency",
-                        "name": "Himalayan Whispers",
-                        "url": "https://www.himalayanwhispers.com",
-                        "logo": "https://www.himalayanwhispers.com/logo.png",
-                        "sameAs": [
-                            "https://www.facebook.com/himalayanwhispers",
-                            "https://www.instagram.com/himalayanwhispers"
-                        ],
-                        "contactPoint": {
-                            "@type": "ContactPoint",
-                            "telephone": "+97577765137",
-                            "contactType": "Customer Service",
-                            "areaServed": [
-                                "IN", "US", "UK", "CA", "AU", "FR", "DE", "IT", "ES",
-                                "SG", "NZ", "AE", "ZA", "JP", "CN", "TH", "MY", "NL", "CH"
-                            ]
-                        }
-                    }
-                `}</script>
+          {
+            "@context": "https://schema.org",
+            "@type": "TravelAgency",
+            "name": "DrukQuest",
+            "url": "https://www.drukquest.com",
+            "logo": "https://www.drukquest.com/logo.jpg",
+            "sameAs": [
+              "https://www.facebook.com/drukquest",
+              "https://www.instagram.com/drukquest"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+97577765137",
+              "contactType": "Customer Service",
+              "areaServed": ["IN", "US", "UK", "CA", "AU", "FR", "DE", "IT", "ES", "SG", "NZ", "AE", "ZA", "JP", "CN", "TH", "MY", "NL", "CH"]
+            }
+          }
+        `}</script>
             </Helmet>
 
             <header className="hero">

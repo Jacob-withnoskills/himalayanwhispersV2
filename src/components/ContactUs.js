@@ -51,31 +51,30 @@ export default function ContactUs() {
     return (
         <section className="contact-us-section">
             <Helmet>
-                <title>Contact Us | Himalayan Whispers</title>
+                <title>Contact Us | DrukQuest</title>
                 <meta name="description" content="Reach out to Himalayan Whispers for unforgettable Bhutan travel experiences. Call, email or request a callback today." />
                 <meta name="robots" content="index, follow" />
 
              
                 <script type="application/ld+json">{`
-                    {
-                      "@context": "https://schema.org",
-                      "@type": "TravelAgency",
-                      "name": "Himalayan Whispers",
-                      "url": "https://www.himalayanwhispers.com",
-                      "logo": "https://www.himalayanwhispers.com/logo.png",
-                      "sameAs": [
-                        "https://www.facebook.com/himalayanwhispers",
-                        "https://www.instagram.com/himalayanwhispers"
-                      ],
-                      "contactPoint": {
-                        "@type": "ContactPoint",
-                        "telephone": "+97577765137",
-                        "contactType": "Customer Service",
-                        "areaServed": ["IN", "US", "UK", "CA", "AU", "FR", "DE", "IT", "ES", "SG", "NZ", "AE", "ZA", "JP", "CN", "TH", "MY", "NL", "CH"]
-
-                      }
-                    }
-                `}</script>
+          {
+            "@context": "https://schema.org",
+            "@type": "TravelAgency",
+            "name": "DrukQuest",
+            "url": "https://www.drukquest.com",
+            "logo": "https://www.drukquest.com/logo.jpg",
+            "sameAs": [
+              "https://www.facebook.com/drukquest",
+              "https://www.instagram.com/drukquest"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+97577765137",
+              "contactType": "Customer Service",
+              "areaServed": ["IN", "US", "UK", "CA", "AU", "FR", "DE", "IT", "ES", "SG", "NZ", "AE", "ZA", "JP", "CN", "TH", "MY", "NL", "CH"]
+            }
+          }
+        `}</script>
             </Helmet>
             <div className="contact-content">
                 <div className="contact-info">

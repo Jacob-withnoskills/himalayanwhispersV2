@@ -15,7 +15,7 @@ export default function Navbar() {
             <div className="logo">
                
                     <Link to="/">
-                        <img src={logo} alt="Himalayan Whispers Logo" />
+                        <img src={logo} alt="DrukQuest Logo" />
                     </Link>
                
             </div>

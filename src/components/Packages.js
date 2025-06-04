@@ -16,10 +16,10 @@ const staticPackages = [
         rating: '5.0',
         reviews: 122,
         locations: '1D Phuntsholing • 1D Thimphu City • 2D Paro +2',
-        price: 28500,
+        price: 34500,
         originalPrice: 37905,
-        savings: 9405,
-        usdPrice: 3750,
+        savings: 3405,
+        usdPrice: 3900,
         image: t4,
     },
     {

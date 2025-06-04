@@ -8,7 +8,7 @@ export default function FooterSection({ setIsOpen }) {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-logo">
-                        <h2>Himalayan Whispers</h2>
+                        <h2>DrukQuest</h2>
                     </div>
 
                     <div className="footer-links">
@@ -33,7 +33,7 @@ export default function FooterSection({ setIsOpen }) {
 
                         <div className="footer-column">
                             <h4>Contact</h4>
-                            <p>Email: support@himalayanwishpers.com</p>
+                            <p>Email: support@drukquest.com</p>
                             <p>Phone: +975 77765137</p>
                             <p>Address: Changjalu ,Thimphu, Bhutan-11001</p>
                         </div>
