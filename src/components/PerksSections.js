@@ -14,7 +14,12 @@ import hasslefree from './images/hasslefree.svg';
 
 export default function PerksSection() {
     return (
+
+        
         <section className="perks-section">
+
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6221994646684060"
+                crossorigin="anonymous"></script>
             <h2 className="section-title">Perks of traveling <span>with Us</span></h2>
             <div className="perks-grid">
                 <div className="perk">

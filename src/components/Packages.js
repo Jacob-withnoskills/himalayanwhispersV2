@@ -194,6 +194,8 @@ export default function Packages() {
 
     const BhutanTourDetailSection = () => (
         <section className="tour-detail-section">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6221994646684060"
+                crossorigin="anonymous"></script>
             <h1>Explore Bhutan with Our Exclusive Tour Packages</h1>
             <p>
                 Discover the magic of Bhutan — the Land of the Thunder Dragon — with our curated tour packages. Whether you're seeking spiritual serenity, breathtaking Himalayan views, or authentic cultural experiences, our Bhutan tours cater to all types of travelers.

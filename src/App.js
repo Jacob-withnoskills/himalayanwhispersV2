@@ -13,6 +13,8 @@ import { Helmet } from "react-helmet";
 function App() {
   return (
     <>
+
+    
       <Helmet>
         <title>DrukQuest | Explore Bhutan with Us</title>
         <meta
@@ -61,6 +63,9 @@ function App() {
           }
         `}</script>
       </Helmet>
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6221994646684060"
+        crossorigin="anonymous"></script>
 
       <Router>
         <Navbar />

@@ -68,6 +68,9 @@ export default function Hero() {
         `}</script>
             </Helmet>
 
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6221994646684060"
+                crossorigin="anonymous"></script>
+
             <header className="hero">
                 <div className="overlay">
                     <h4>DISCOVER THE LAND OF THE THUNDER DRAGON</h4>
