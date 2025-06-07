@@ -1,26 +1,40 @@
-const { SitemapStream, streamToPromise } = require('sitemap');
-const { createWriteStream } = require('fs');
-const { resolve } = require('path');
+const fs = require('fs');
+const path = require('path');
 
-async function generateSitemap() {
-    const hostname = 'https://drukquest.com';
-    const sitemapPath = resolve(__dirname, 'public', 'sitemap.xml');
+const BASE_URL = 'https://www.drukquest.com';  // Your live site URL
 
-    const smStream = new SitemapStream({ hostname });
-    const writeStream = createWriteStream(sitemapPath);
+// Manually list your website routes here:
+const routes = [
+    { url: '/', changefreq: 'daily', priority: 1.0 },
+    { url: '/about', changefreq: 'monthly', priority: 0.7 },
+    { url: '/contact', changefreq: 'monthly', priority: 0.7 },
+    { url: '/tours', changefreq: 'weekly', priority: 0.9 },
+    { url: '/tours/adventure', changefreq: 'weekly', priority: 0.8 },
+    { url: '/blog', changefreq: 'weekly', priority: 0.8 },
+    // Add all other routes here manually
+];
 
-    smStream.pipe(writeStream);
+// Function to build sitemap XML
+function buildSitemap(routes) {
+    const xmlHeader = `<?xml version="1.0" encoding="UTF-8"?>\n` +
+        `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
 
-    // Write URLs
-    smStream.write({ url: '/', changefreq: 'daily', priority: 1.0 });
-    smStream.write({ url: '/contact-us', changefreq: 'monthly', priority: 0.8 });
-    // Add more routes as needed
+    const xmlFooter = `</urlset>`;
 
-    smStream.end();
+    const urlEntries = routes.map(route => {
+        return `
+  <url>
+    <loc>${BASE_URL}${route.url}</loc>
+    <changefreq>${route.changefreq}</changefreq>
+    <priority>${route.priority}</priority>
+  </url>`;
+    }).join('');
 
-    await streamToPromise(smStream);
-
-    console.log('Sitemap generated at:', sitemapPath);
+    return xmlHeader + urlEntries + '\n' + xmlFooter;
 }
 
-generateSitemap().catch(console.error);
+// Write sitemap.xml file
+const sitemap = buildSitemap(routes);
+fs.writeFileSync(path.resolve(__dirname, 'public', 'sitemap.xml'), sitemap);
+
+console.log('Sitemap generated successfully!');
