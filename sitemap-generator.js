@@ -2,25 +2,25 @@ const { SitemapStream, streamToPromise } = require('sitemap');
 const { createWriteStream } = require('fs');
 const { resolve } = require('path');
 
-(async () => {
-    const sitemapStream = new SitemapStream({ hostname: 'https://www.drukquest.com' });
+async function generateSitemap() {
+    const hostname = 'https://drukquest.com';
+    const sitemapPath = resolve(__dirname, 'public', 'sitemap.xml');
 
-    const writeStream = createWriteStream(resolve(__dirname, 'public', 'sitemap.xml'));
+    const smStream = new SitemapStream({ hostname });
+    const writeStream = createWriteStream(sitemapPath);
 
-  
-    sitemapStream.pipe(writeStream);
+    smStream.pipe(writeStream);
 
- 
-    sitemapStream.write({ url: '/', changefreq: 'daily', priority: 1.0 });
-    sitemapStream.write({ url: '/about', changefreq: 'monthly', priority: 0.8 });
-    sitemapStream.write({ url: '/packages', changefreq: 'monthly', priority: 0.8 });
-    sitemapStream.write({ url: '/faq', changefreq: 'monthly', priority: 0.6 });
-    sitemapStream.write({ url: '/contact', changefreq: 'monthly', priority: 0.7 });
+    // Write URLs
+    smStream.write({ url: '/', changefreq: 'daily', priority: 1.0 });
+    smStream.write({ url: '/contact-us', changefreq: 'monthly', priority: 0.8 });
+    // Add more routes as needed
 
-    sitemapStream.end();
+    smStream.end();
 
+    await streamToPromise(smStream);
 
-    await streamToPromise(sitemapStream);
+    console.log('Sitemap generated at:', sitemapPath);
+}
 
-    console.log('✅ Sitemap generated successfully at /public/sitemap.xml');
-})();
+generateSitemap().catch(console.error);
