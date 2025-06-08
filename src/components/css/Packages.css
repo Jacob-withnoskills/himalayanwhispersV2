@@ -293,3 +293,94 @@ body {
         width: 100%;
     }
 }
+@media (max-width: 420px) {
+
+    .packages-section,
+    .best-deals-section {
+        padding: 40px 15px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 30px;
+    }
+
+    .packages-container,
+    .deals-container {
+        padding: 0 10px;
+        gap: 20px;
+    }
+
+    .package-card {
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(102, 204, 255, 0.08);
+    }
+
+    .package-image {
+        height: 200px;
+    }
+
+    .package-details {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .package-details .title {
+        font-size: 1rem;
+    }
+
+    .package-details .duration,
+    .package-details .rating,
+    .package-details .locations {
+        font-size: 0.85rem;
+    }
+
+    .price-box .price {
+        font-size: 1rem;
+    }
+
+    .callback-btn {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .callback-dialog {
+        padding: 20px;
+    }
+
+    .callback-dialog h3 {
+        font-size: 1.2rem;
+    }
+
+    .callback-dialog input[type="text"],
+    .callback-dialog input[type="tel"] {
+        font-size: 0.95rem;
+        padding: 8px 10px;
+    }
+
+    .dialog-buttons {
+        flex-direction: column;
+    }
+
+    .dialog-buttons button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .tour-detail-section {
+        padding: 30px 15px;
+    }
+
+    .tour-detail-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .tour-detail-section p {
+        font-size: 0.95rem;
+    }
+}

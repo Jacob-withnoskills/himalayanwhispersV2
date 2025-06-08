@@ -12,10 +12,10 @@ import t6 from './images/tour6.jpg';
 const staticPackages = [
     {
         title: 'Mystical Bhutan Adventure | Explore Taktsang Monastery',
-        duration: '6 days & 5 nights',
+        duration: '4 days & 3 nights',
         rating: '5.0',
         reviews: 122,
-        locations: '1D Phuntsholing • 1D Thimphu City • 2D Paro +2',
+        locations: '1D Phuntsholing • 1D Thimphu City • 2D Paro',
         price: 34500,
         originalPrice: 37905,
         savings: 3405,

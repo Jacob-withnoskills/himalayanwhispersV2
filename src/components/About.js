@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './css/About.css';
 import guideImg from './images/guide.jpg';
 import travelMapImg from './images/about.jpg';
@@ -7,6 +8,27 @@ import FooterSection from './FooterSection';
 export default function About() {
     return (
         <div className="about-wrapper">
+            <Helmet>
+                <title>About DrukQuest | Bhutan Tour Experts</title>
+                <meta name="description" content="Discover who we are at DrukQuest — your trusted and affordable Bhutan travel partner. Learn about our mission, services, and upcoming adventures." />
+                <meta name="keywords" content="About Bhutan Travel, DrukQuest, Bhutan Tour Guide, Budget Bhutan Packages, Explore Bhutan" />
+                <meta name="author" content="DrukQuest Team" />
+                <link rel="canonical" href="https://www.drukquest.com/about" />
+
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://www.drukquest.com/about" />
+                <meta property="og:title" content="About DrukQuest | Bhutan Tour Experts" />
+                <meta property="og:description" content="Discover who we are at DrukQuest — your trusted and affordable Bhutan travel partner. Learn about our mission, services, and upcoming adventures." />
+                <meta property="og:image" content="https://www.drukquest.com/og-image.jpg" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="About DrukQuest | Bhutan Tour Experts" />
+                <meta name="twitter:description" content="Trusted, budget-friendly Bhutan travel experiences by DrukQuest. Learn more about our services and achievements." />
+                <meta name="twitter:image" content="https://www.drukquest.com/og-image.jpg" />
+            </Helmet>
+
             <section className="about-hero">
                 <h1>About Us</h1>
                 <p>

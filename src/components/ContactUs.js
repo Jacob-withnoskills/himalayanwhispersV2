@@ -84,13 +84,13 @@ export default function ContactUs() {
                         <div className="contact-group">
                             <p>For Indian Guests</p>
                             <p>📞 +975 77765137</p>
-                            <p>📧 support@himalayanwhispers.com</p>
+                            <p>📧 support@drukquest.com</p>
                         </div>
 
                         <div className="contact-group">
                             <p>For Foreign Nationals / NRIs</p>
                             <p>📞 +975 77765137</p>
-                            <p>📧 support@himalayanwhispers.com</p>
+                            <p>📧 support@drukquest.com</p>
                         </div>
                     </div>
 

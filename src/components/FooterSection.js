@@ -41,7 +41,7 @@ export default function FooterSection({ setIsOpen }) {
                         <div className="footer-column">
                             <h4>Follow Us</h4>
                             <div className="social-icons">
-                                <a href="https://facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">📘</a>
+                                <a href="https://www.facebook.com/profile.php?id=61577346681340" target="_blank" rel="noreferrer" aria-label="Facebook">📘</a>
                                 <a href="https://twitter.com" target="_blank" rel="noreferrer" aria-label="Twitter">🐦</a>
                                 <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">📸</a>
                                 <a href="https://linkedin.com" target="_blank" rel="noreferrer" aria-label="LinkedIn">💼</a>
